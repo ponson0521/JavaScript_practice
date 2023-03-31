@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>title</title>
+</head>
+ 
+<body>
+    <input id="givenYear" type="number">
+    <input type="submit" value="提交" onclick="leapYear()">
+    <script>
+        function leapYear() {
+            const year = document.getElementById('givenYear').value;
+            return console.log((year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0));
+        }
+    </script>
+</body>
+ 
+</html>

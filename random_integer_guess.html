@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>title</title>
+</head>
+ 
+<body>
+        <input name="guess" id="guess" type="number">
+        <input name="submit" id="submit" type="submit" value="提交" onclick="guess()">
+    <script>
+        const answer = Math.ceil(Math.random()*10);
+        console.log(answer);
+        function guess() {
+            const theGuess = document.getElementById('guess').value;
+            if (theGuess == answer) {
+                alert('Right');
+            }
+            else {
+                alert('Wrong');
+            }
+        }
+    </script>
+</body>
+ 
+</html>

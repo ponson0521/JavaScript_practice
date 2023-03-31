@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>title</title>
+</head>
+ 
+<body>
+    <input id="givenNumber1" type="number">
+    <input id="givenNumber2" type="number">
+    <input type="submit" value="相乘" onclick="multiplication()">
+    <input type="submit" value="相除" onclick="division()">
+    <script>
+        function multiplication() {
+            const givenNumber1 = document.getElementById("givenNumber1").value;
+            const givenNumber2 = document.getElementById("givenNumber2").value;
+            document.write(givenNumber1*givenNumber2);
+        }
+        function division() {
+            const givenNumber1 = document.getElementById("givenNumber1").value;
+            const givenNumber2 = document.getElementById("givenNumber2").value;
+            document.write(givenNumber1/givenNumber2);
+        }
+
+    </script>
+</body>
+ 
+</html>

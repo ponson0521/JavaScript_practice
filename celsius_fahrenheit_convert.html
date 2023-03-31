@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="celsius" type="number" onchange="celsius()">
+    <input id="fahrenheit" type="number" onchange="fahrenheit()">
+    <script>
+        function celsius() {
+            const temperature = document.getElementById("celsius").value;
+            const convert = temperature*(9/5)+32;
+            document.getElementById("fahrenheit").value = convert;
+        }
+        function fahrenheit() {
+            const temperature = document.getElementById("fahrenheit").value;
+            const convert = (temperature-32)*5/9;
+            document.getElementById("celsius").value = convert;
+        } 
+    </script>
+</body>
+</html>
